@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/filterTextView"
+    android:scrollbars="horizontal|vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/top_attraction_text_view"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/captionMBS"
+        />
+
+    <LinearLayout
+        android:id="@+id/mbsAttractionListingLayout"
+        android:layout_width="290dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        >
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/attractionListView"
+        android:layout_width="354dp"
+        android:layout_height="361dp"
+
+        android:layout_alignTop="@+id/mbsAttractionListingLayout"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

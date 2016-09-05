@@ -1,0 +1,115 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:background="@drawable/logo"
+        android:layout_marginTop="134dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/imageView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="@string/username_text_view"
+                android:id="@+id/usernameTextView"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="@string/password_text_view"
+                android:id="@+id/passwordTextView"
+                android:textAlignment="gravity"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/confirm_pass_text_view"
+                android:id="@+id/textView8"
+                android:textAlignment="gravity"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout3"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/newUsernameEditText"
+                android:background="@android:color/white"
+                android:hint="@string/username_edit_text_hint" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/newPasswordEditText"
+                android:background="@android:color/white"
+                android:hint="@string/password_edit_text_hint"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/confirmPasswordEditText"
+                android:background="@android:color/white"
+                android:hint="@string/confirm_password_edit_text"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:id="@+id/createAccountBut"
+            android:onClick="onCreateAccount"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_toEndOf="@+id/imageView" />
+
+    </RelativeLayout>
